@@ -1,0 +1,159 @@
+Day 1
+
+
+
+/*Assignment -2 program number - 8
+
+Write a program that will calculate the price for a quantity entered from the keyboard,
+given that the unit price is Rs 5 and there is a discount of 10 percent for quantities
+over 30 and a 15 percent discount for quantities over 50.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Language classification
+procedure oriented PL-C,pascal
+object oriented PL - c++, java, c#, python
+object based PL - VB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+History:
+
+@1960 OOP <--designed by Alen Kay 
+
+@1960 <-- simula is first oop lang designed by Ole-Johan Dahl nd Kristen Nygaard
+
+@1979 <-- Bjarne Stroustrup develop 'C with classes' (cfront) to inprove the exe speed
+
+@1983 <-- c++ (rename 'C with classes') with added features.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+default Arguments - 	The arguments that are provided by the programmer in case,
+  			user do not provide any vaules
+			-default arg should be given from R to L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inline functions - replaced at their call by compiler for faster execution
+
+
+
+
+
+
+
+
+
+
+
+
+2. function overloading - same name and diff signature of function
+			- Name mangling process , mangled name
+			- Differ in number of input arguments
+			- Differ in datatype of input arguments
+			- Differ atleast in the sequence of the input arguments
+
+
+
+
+
+
+
+
+
+
+struct in c 					struct in c++
+
+1. we can include only 			1. we can include the variables 
+  variables into 			as well as the functions in 
+  the structure				structure.
+  
+
+2. Writing struct 		 	2. Writing struct keyword is optional
+  keyword is compulsory	
+
+3. We need to pass a 			3. We don't pass the structure 
+  structure variable by			variable to the functions to accept 
+  value or by address to	 	it / display it. 
+  the functions.	            	The functions inside the struct are
+				      	called with the variable and DOT 						operator
+
+4. By default all the 			4. By default all the members 						are accessible outside the 
+ variables of structure    		structure, but we can restrict 
+ are accessible outside			their access by applying the	
+the structure.				keywords private /public/ 						protected.
+
+ struct date d1;			struct date d1;		
+					
+ AcceptDate(struct date &d1);		d1.AcceptDate(); //function call
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+4. Access specifire- defines the accessibility of data member
+		

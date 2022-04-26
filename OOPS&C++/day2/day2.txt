@@ -1,0 +1,224 @@
+
+
+
+main() never declared as inline
+
+
+Return data type is not consider in  Function Overloading
+By using Function Overloading we can achive polymorphism in c++.
+
+default arg should be given from R to L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data member
+Member function
+
+
+
+
+
+Access specifire- defines the accessibility of data member,Member functions
+
+
+Private - Can access inside the same struct/class in which it is declared
+	  Generally data members should declared as private.
+public -  Can access inside the same struct/class in which it is declared as well as 		  inside out side function(like main()). 
+	  Generally member functions should declared as public.
+
+
+
+
+
+
+
+
+
+
+
+"this" Pointer
+->When we call member function using object implicitily one parameter 
+is passed to that function is called as "this" pointer.
+->"this" is a keyword in cpp
+->"this" pointer always stores address of current object or calling 
+object.
+->thus every member function of  class/struct refer this pointer which is a 1st
+parameter of member function.
+->this is a constant pointer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Diffrance between class and struct in cpp is - all the members of class is by default private and all the members of struct in cpp is by default public.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class - User define data type.
+Object -variable of class is called object
+	object gets physical memory.
+
+
+"class" as a blueprint of object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+characteristics of object
+1.State - determined by the value of data member
+2.Behavior- member function decides behavior of object.
+Calling the same member function on two objects having diff state will show diff behavior.
+3.Identity- every object has a characteristic that makes the object unique. In cpp every object has unique address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Types of member function
+Constructor
+Destructor
+Mutators/setter
+inspector/getter
+facilitator
+
+
+
+
+
+
+
+
+
+
+
+Empty Class
+
+	A class which do not have any Data member or member function is
+called as the Empty class.
+
+- We can create an object of a empty class.
+- Size of an object of a empty class is 1 byte.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Namespace
+-used to avoid name ambiguity in case of globle variable,function,classes
+-Logical grouping of variable , function, enum, structure, class, namespaces.
+-to achive logical modular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cout - object of ostream class declared in iostream inside std namespace
+	It uses << operator called as insertion operator
+
+cin - object of istream class declared in iostream inside std namespace
+	It uses >> operator called as extraction operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,26 @@
+19:34:15 **** Clean-only build of configuration Debug for project assignment1_1 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf src/assignment1_1.o assignment1_1.exe src/assignment1_1.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[\bin;\bin;C:/Program Files (x86)/Java/jre1.8.0_231/bin/client;C:/Program Files (x86)/Java/jre1.8.0_231/bin;C:/Program Files (x86)/Java/jre1.8.0_231/lib/i386;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Users\dummy\gcc\bin;C:\Users\dummy\gcc\libexec\gcc\i686-pc-mingw32\7.0.1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\dummy\AppData\Local\Microsoft\WindowsApps;;C:\windows eclipse c_cpp\eclipse]
+
+19:34:15 **** Clean-only build of configuration Debug for project assignment1_1 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+19:34:20 **** Rebuild of configuration Debug for project assignment1_1 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assignment1_1.o" "..\\src\\assignment1_1.cpp" 
+g++ -o assignment1_1.exe "src\\assignment1_1.o" 
+Info: Nothing to build for assignment1_3
+Info: Nothing to build for assignment1_4
+Info: Nothing to build for assignment1_1
+19:35:15 **** Incremental Build of configuration Debug for project assignment1_1 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assignment1_1.o" "..\\src\\assignment1_1.cpp" 
+g++ -o assignment1_1.exe "src\\assignment1_1.o" 
+Info: Nothing to build for assignment1_3
+Info: Nothing to build for assignment1_4
+Info: Nothing to build for assignment1_1

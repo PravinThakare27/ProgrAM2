@@ -1,0 +1,120 @@
+
+
+
+
+copy construtor = to cteate new object from existing object.
+
+shallow copy =	It is a process of copying one object to into another object.
+	   	Default copy constructor always create shallow copy.
+
+deep copy    = 	If class data member holds address of memory,then we should allocte new memory for the data member of the destination object and then we should copy contents from source object into memory of destination object. Such type of copy is called deep copy.
+
+
+
+
+
+
+
+
+
+static - class level not object level
+
+static data member-
+If we want to share value of any data member in all object then we should declare that data member as a static.
+-All the object share single copy of that static member.
+-Size of object=size of all the non-static data members declared inside the class.
+-Also called class level variables 
+
+static member function -
+- To access static data member outside the class we should declared static function inside class.
+- call by using class name;
+- this pointer is not available.
+
+
+
+
+
+
+
+const:
+
+const data member : can not change value once it is assigned , 
+const member function : can not modify data member of class.
+		"mutable" data member can be midified in const function
+const object : can not modify the state of object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Friend:
+A non member function of a class which designed to access private data of a class is called friend function.
+
+
+
+
+
+
+
+
+C++ is not a pure Object Oriented Language Because
+
+-->You can write code without creating a class in C++, and main() is a globle function.
+
+-->Support primitive data types, e.g. int, char, etc. Instances(variable) of these primitive types are NOT objects.
+
+-->C++ provides "Friend" which is absolute corruption to 
+the OO-Principle.
+
+-->Private data can be access by using pointers.
+
+-->According OO-Principle, one object should have only one 
+hierarchical parent reference. In C++, Multiple-Inheritance 
+contradicts this principle.
+
+
+
+
+
+
+operator overloading=Extending meaning of the operator so that they can be used on objects.
+
+we cannot overload following opertors
+ 	.
+	.*
+	?:
+	::
+	sizeof
+	typeid
+	//casting optr
+we cannot overload following opertors as a non member function
+	=
+	[]
+	()
+	->
+
+copy construtor = to create new object from existing object.
+assignment operator = used to assign already created object to another already created. object 
+
+
+
+
+
+
+
+
+
+

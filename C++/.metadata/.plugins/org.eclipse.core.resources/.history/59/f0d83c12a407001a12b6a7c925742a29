@@ -1,0 +1,16 @@
+//============================================================================
+// Name        : assignment1_4.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include<stdio.h>
+int calculate(int a=120,int b=500,int c=300,int d=502);
+{
+ int result;
+ result=a+b+c+d;
+		 prinf("\n a=%d b=%d c=%d d=%d",a,b,c,d);
+		 return result;
+}

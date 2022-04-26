@@ -1,0 +1,143 @@
+protected data member:
+ The protected access specifier allows the base class members to access onto derived class. However, protected members are not accessible from outside the class and globle functions like main().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mode of inheritance  (read "--->" as becomes)
+		Base	   Derived
+public mode:
+		Public ---> Public
+		protected ---> Protected
+		private --->  private 
+
+protected mode:
+		Public ---> Protected
+		protected ---> Protected
+		private ---> private 
+
+private mode:
+		Public ---> private 
+		protected ---> private
+		private ---> private 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class BASE
+{
+	private:
+		int PrivateData;
+	protected:
+		int ProtectedData;
+	public:
+		int PublicData;
+};
+
+class Derived:public BASE
+{
+	void printDate()
+	{
+		this->PrivateData=1;
+		this->ProtectedData=1;
+		this->PublicData=1;
+	}
+
+};
+class other
+{
+	void OtherPrint()
+	{
+		Derived d;
+		d.PrivateData=1;
+		d.ProtectedData=1;
+		d.PublicData=1;
+	}
+}
+int main()
+{
+}
+
+
+
+Virtual Inheritance-
+Virtual inheritance is a C++ technique that ensures only one copy of a base class's member variables are inherited by grandchild derived classes. This feature is most useful for multiple inheritance to avoid the diamond problem 
+
+
+
+
+
+
+
+
+object slicing-if we assign derived class object to the base class object then compiler copies only state of base class portion from derived class object into base class object . This process is called object slicing.
+
+
+
+
+
+
+
+
+
+
+
+// person - student example
+//object slicing on stack based objs
+//object slicing on heap based objs
+//virtual function
+
+
+
+
+
+Virtual Function
+-> The function which gets called depending upon the type of 
+object rather than type of pointer such type of function is 
+called as "Virtual Function"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 

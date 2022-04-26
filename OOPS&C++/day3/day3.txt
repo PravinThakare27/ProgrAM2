@@ -1,0 +1,219 @@
+
+
+Namespace
+-used to avoid name ambiguity in case of globle variable,function,classes
+-Logical grouping of variable , function, enum, structure, class, namespaces.
+-to achive logical modularity
+
+
+
+
+
+cout - object of ostream class declared in iostream inside std namespace
+	It uses << operator called as insertion operator
+
+cin - object of istream class declared in iostream inside std namespace
+	It uses >> operator called as extraction operator
+
+
+
+
+
+
+
+Complex class
+	data member 		real , imaginary
+	member functions	complex(),complex(int r,int i),accept(),print()
+				~complex()
+
+
+
+
+
+
+
+
+
+
+
+
+
+read only-get
+write only-set
+
+
+
+
+
+
+
+
+
+
+
+
+
+importance of setter and getter 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+new 					malloc
+
+new is an operator			malloc is a function.
+
+new returns a typecasted		malloc returns void pointer,
+operator, so no need to 		hence it is required to type
+do explicit typecasting.		cast it explicitly, before use.
+
+We must mention the datatype	        malloc accepts only the exact
+while allocating the memory		no. of bytes required, so
+with new.				no need to mention datatype.
+
+When memory is allocated with	        When memory gets allocated by
+new, constructor gets called for	malloc function, constructor function
+the object.				does not gets called.
+
+Memory allocated by new is		Memory allocated by malloc is
+released by the operator		released by function free.
+delete.
+
+Destr is called when memory is	        Destr is NOT called when the
+released with delete			memory is released with free.
+
+To release memory for array		To release memory for array
+syntax is 					syntax is
+delete[] 					free( ptr );
+
+In case new fails to allocate	        In case malloc fails to allocate
+memory, it raises a Run time 	        memory it returns a NULL.
+exception called as bad_alloc.
+
+
+
+
+
+
+Memory leakage - some memory is dynamically allocated and no pointer is available to access that memory; such type of wastage of memory is called Memory leakage.
+
+
+
+Dangling pointer- a pointer which is points to "unallocated memory" is called as dangling pointer. 
+
+
+
+
+
+
+
+References-A reference variable is an alias that is , another name for an already existing variable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+call by value
+call by address
+call by refrance
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------
+	Pointers			    References
+1. It is a variable that points		1. It is an alias / secondary name
+  to another variable.			   to an already existing memory.
+
+2. To access the value of a 		2. No need of dereferencing to access
+   variable with the help of		   a value of a variable with ref.
+   a pointer, we need to do
+   dereferencing explicitly.
+
+
+3. We can create a pointer to		4. We can't create a reference to 
+   a pointer. 				   to reference.
+
+4. We can create a pointer		5. We can't create a ref without
+   without initialization.		   initialization.
+  Create a NULL pointer.		   NULL ref can't be created.
+
+5. We can create an array		6. We can't create an array of 
+	of NULL pointers.		   references (NULL);
+
+
+
+
+
+
+-sum of two complex number
+-copy constructor
+
+
+
+-Array class
+	Data member  		int size, int *ptr;
+	Member function 	Array(),Array(int s),printArray(),acceptArray(),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+copy construtor = to create new object from existing object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shallow copy =	It is a process of copying one object to into another object.
+	   	Default copy constructor always create shallow copy.
+
+deep copy    = 	If class data member holds address of memory,then we should allocte new memory 	for the data member of the destination object and then we should 			copy contents from source object into memory of destination object. Such 			type of copy is called deep copy.

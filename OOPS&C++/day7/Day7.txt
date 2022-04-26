@@ -1,0 +1,134 @@
+Virtual Function
+-> The function which gets called depending upon the type of 
+object rather than type of pointer such type of function is 
+called as "Virtual Function"
+
+
+
+Late Binding
+-> when call to the Virtual Function is given by pointer then 
+it is late binding.
+
+Function overridding:
+-> virtual function defined in base class is once again 
+redefine in derived class is called Function overridding
+->Function which takes part in overridding is called  as 
+overridded function
+->for function overriedding function in the base class must
+be virtual.
+
+Function overloading 	  	Function overriding
+
+Fun with same name and 	 	Redefining function in derived 
+different signature.	  	class with same name and
+ 			  	      same signature
+
+function are in same scope      Function in base class are 
+				        overridden in derived class
+
+Compile time Polymorphism	   run time Polymorphism	
+
+In c++ dont need a keyword	    in C++ virtual keyword required
+
+Function call is resolve by 	Function call resolve at runtime.
+compiler internally modified    Internally it uses V-table &
+names of function.		   and V-Pointer mechanism
+
+Since compiler modifies name	since call is resolve at 
+of function it is also called 	runtime it is called as
+as "false Polymorphism".	     "true Polymorphism".
+ 					
+ 
+  
+
+Virtual function table:
+when class contains at least one virtual function at that time 
+compiler create one table internally which stores the address 
+of virtual function declared inside that class such table is called 
+as virtual function table VF-table or v-table.
+
+
+
+
+Virtual function pointer :
+when class contains virtual function internaly v-table is created 
+by compiler implicitly adds one hidden member inside class 
+which store the address of v-table such hidden member is called as
+virtual function pointer vfptr/vptr
+
+
+
+
+vtable store addresses of virtual function and vptr stores 
+address of vtable
+
+
+
+
+
+Pure virtual function
+-> virtual fun which is equated to zero such function is called as 
+Pure virtual function
+-> Genarally Pure virtual function does not have body.
+-> a class which contains atleast one Pure virtual function
+such class is called as "Abstract class".
+-> If class is Abstract we can not create object of that class but 
+we can create pointer or refrance of that class .
+-> It is not compulsary to override virtual function but It is 
+compulsary to override Pure virtual function
+-> If we not override pure virtual function in derived class at 
+that time derived class can be treated as abstract class.
+
+
+
+
+
+
+
+
+Exception Handing
+-> Run time error which can be handled by program is 
+called Exception 
+-> in c++ Exceptions are handled by try catch and throw 
+-> try block must have atleast 1 catch handler
+-> one try block can have multiple catch blocks
+->catch block which handles all kinds of Exception such type of 
+catch is called Generic catch block
+
+
+
+
+
+
+
+
+
+
+Templates-
+->Templates are the foundation of generic programming, which involves writing code in a way that is independent of any particular type.
+->T is a placeholder name for a data type used by the function. This name can be used within the function definition.
+->You can use templates to define functions as well as classes
+
+
+
+
+
+
+
+
+
+
+dest=case_operator<dest_type>(source)
+
+reintrepret_cast=Used to convert any type into any other incompatible type
+const_cast=convert constant pointer/ref into non-constant pointer/ref
+static_cast=specially used for non-polymorphic type
+dynamic_cast= mainly designed for polymorphic type only
+
+
+
+
+
+
+
+
